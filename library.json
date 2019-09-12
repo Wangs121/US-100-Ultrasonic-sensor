@@ -1,0 +1,13 @@
+{
+  "name": "US-100-Ultrasound-sensor",
+  "keywords": "US-100, Ultrasound-sensor",
+  "description": "A library to use US 100 Ultrasound sensor easier.",
+  "include": "US100",
+
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/Wangs121/US-100-Ultrasound-sensor"
+  },
+  "frameworks": "arduino"
+}
