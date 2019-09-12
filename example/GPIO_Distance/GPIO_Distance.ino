@@ -1,11 +1,14 @@
 #include <US_100.h>
 
-//use UART to read tempeature
+//use GPIO to read tempeature
 //    US-100   ARDUINO
 //Pin  Echo      P2
 //Pin  Trig      P3
 
-US100 mysonic1(2,3,50);//wait time after send command(us)(shoud be more than 10)
+//attach to P2(Echo) and 3(Trig)
+//wait 50us after send command(shoud be more than 10)
+US100 mysonic1(2,3,50);
+
 void setup() {
 Serial.begin(9600);
 }

@@ -3,7 +3,7 @@
 //   US-100 ARDUINO
 //Pin  TX     TX(P1)
 //Pin  Rx     Rx(P0)
-US100 mysonic1(100);
+US100 mysonic1(100);//wait 100ms after send command
 void setup() {
 Serial.begin(9600);
 }
