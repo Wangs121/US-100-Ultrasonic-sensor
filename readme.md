@@ -1,30 +1,26 @@
-## A library to use US-100 Ultrasound sensor easier.
+## A library for Arduino to use US-100 Ultrasound sensor .
+* ### use GPIO mode and UART mode to get Distance 
+* ### use UART to get Temperature
+#### Using UART:
 
-### for example :
-
-Using GPIO to read distance:
-
-``` c++
-#include <US_100.h>
-
-//use GPIO to read tempeature
-//    US-100   ARDUINO
-//Pin  Echo      P2
-//Pin  Trig      P3
-
-//attach to P2(Echo) and 3(Trig)
-//wait 50us after send command(shoud be more than 10)
+* ##### initialize
+``` C++
 US100 mysonic1(2,3,50);
-
-void setup() {
-Serial.begin(9600);
-}
-
-void loop() {
-Serial.println(mysonic1.get_Distance());
-}
+```
+*  ##### Get Distance:
+``` C++
+mysonic1.get_Distance();
 ```
 
-
+####  Using GPIO:
+* ##### initialize
+``` C++
+US100 mysonic1(100);
+```
+*  ##### Get Distance:
+``` C++
+mysonic1.get_Distance();
+```
 
 see more in example folder.
+
